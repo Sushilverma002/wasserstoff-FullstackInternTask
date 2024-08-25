@@ -17,12 +17,4 @@ router.get("/readBy/status", adminOnly, auctions.getAllAuctionStatus);
 //============bid routes=========
 router.post("/bid", bid.create);
 router.post("/winner", bid.auctionWinner);
-// cron.schedule("* * * * *", async () => {
-//   try {
-//     console.log("Cron job triggered to announce auction winners...");
-//     await bid.auctionWinner();
-//   } catch (error) {
-//     console.error("Error while running the cron job:", error);
-//   }
-// });
 export default router;
