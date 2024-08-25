@@ -41,7 +41,6 @@ This system is designed to handle user authentication and auction management. It
 
     ```bash
     git clone https://github.com/your-repo/auction-system.git
-    cd auction-system
     ```
 
 2. Install dependencies for both services:
