@@ -47,20 +47,20 @@ This system is designed to handle user authentication and auction management. It
 2. Install dependencies for both services:
 
     ```bash
-    cd user-auth-service
+    cd auth-microservice
     npm install
 
-    cd ../auction-service
+    cd ../auction-microservice
     npm install
     ```
 
 3. Start the services:
 
     ```bash
-    cd user-auth-service
+    cd auth-microservice
     nodemon
 
-    cd ../auction-service
+    cd ../auction-microservice
     nodemon
     ```
 
