@@ -1,0 +1,1402 @@
+{
+	"info": {
+		"_postman_id": "4509faa4-3623-4548-8e71-8c10788567bb",
+		"name": "FullstackInternTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32479289",
+		"_collection_link": "https://cd-auth.postman.co/workspace/fullstacktask~1c490e15-02ef-487f-a515-f374dc0fc052/collection/32479289-4509faa4-3623-4548-8e71-8c10788567bb?action=share&source=collection_link&creator=32479289"
+	},
+	"item": [
+		{
+			"name": "user-microservice",
+			"item": [
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"mobep\",\r\n    \"email\":\"mobep97317@avashost.com\",\r\n    \"password\":\"123456\",\r\n    \"role\":\"User\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signUp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sign up",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"test\",\r\n    \"email\":\"mobep97317@avashost.com\",\r\n    \"password\":\"123456\",\r\n    \"role\":\"User\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/signUp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"signUp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "255"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ff-2NCyVT7BAKSMt7STTgKWGeuaDUs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 06:03:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"name\": \"test\",\n        \"email\": \"mobep97317@avashost.com\",\n        \"role\": \"User\",\n        \"isVerified\": false,\n        \"_id\": \"66cac948860cc50d9963a269\",\n        \"created_at\": \"2024-08-25T06:03:52.258Z\",\n        \"updated_at\": \"2024-08-25T06:03:52.258Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "verfiy email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/verfiyEmail/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzlmM2FjZjliMjU4MjA0M2E4NTkyNSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDUxMTE0OCwiZXhwIjoxNzI0NTk3NTQ4fQ.qBn6oooPOtwAQBEM9-RL8lABQn4MasZfI1gvSiat5j0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"verfiyEmail",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzlmM2FjZjliMjU4MjA0M2E4NTkyNSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDUxMTE0OCwiZXhwIjoxNzI0NTk3NTQ4fQ.qBn6oooPOtwAQBEM9-RL8lABQn4MasZfI1gvSiat5j0"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzlmM2FjZjliMjU4MjA0M2E4NTkyNSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDUxMTE0OCwiZXhwIjoxNzI0NTk3NTQ4fQ.qBn6oooPOtwAQBEM9-RL8lABQn4MasZfI1gvSiat5j0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "verfiy email",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/v1/verfiyEmail/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzlmM2FjZjliMjU4MjA0M2E4NTkyNSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDUxMTE0OCwiZXhwIjoxNzI0NTk3NTQ4fQ.qBn6oooPOtwAQBEM9-RL8lABQn4MasZfI1gvSiat5j0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"verfiyEmail",
+										"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzlmM2FjZjliMjU4MjA0M2E4NTkyNSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDUxMTE0OCwiZXhwIjoxNzI0NTk3NTQ4fQ.qBn6oooPOtwAQBEM9-RL8lABQn4MasZfI1gvSiat5j0"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzlmM2FjZjliMjU4MjA0M2E4NTkyNSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDUxMTE0OCwiZXhwIjoxNzI0NTk3NTQ4fQ.qBn6oooPOtwAQBEM9-RL8lABQn4MasZfI1gvSiat5j0",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-pjes5rOpWtuITtRoVT/UYeua/c0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Aug 2024 14:54:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": \"Email verified successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"email\":\"mobep97317@avashost.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \"email\":\"mobep97317@avashost.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "379"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17b-5CayfKZZSX4lzeIe3YUCfisgX1E\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 06:05:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"id\": \"66cac948860cc50d9963a269\",\n        \"email\": \"mobep97317@avashost.com\",\n        \"role\": \"User\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjOTQ4ODYwY2M1MGQ5OTYzYTI2OSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDU2NTkxNiwiZXhwIjoxNzI0NjUyMzE2fQ.5eQt8ng4rJmWVw4bpDWGRKurElCkliZz5tyYsvdqiYQ\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjOTQ4ODYwY2M1MGQ5OTYzYTI2OSIsImVtYWlsIjoibW9iZXA5NzMxN0BhdmFzaG9zdC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcyNDU2NTkxNiwiZXhwIjoxNzI0NjUyMzE2fQ.5eQt8ng4rJmWVw4bpDWGRKurElCkliZz5tyYsvdqiYQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"id\":\"66cac948860cc50d9963a269\",\r\n    \"email\":\"mobep97317@avashost.com\",\r\n    \"name\":\"mobep\",\r\n    \"password\":\"mobep\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \r\n    \"id\":\"66cac948860cc50d9963a269\",\r\n    \"email\":\"mobep97317@avashost.com\",\r\n    \"name\":\"mobep\",\r\n    \"password\":\"mobep\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"100-wkouPFlPrftsTZkAqYvWBIZAnmo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 06:08:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"_id\": \"66cac948860cc50d9963a269\",\n        \"name\": \"mobep\",\n        \"email\": \"mobep97317@avashost.com\",\n        \"role\": \"User\",\n        \"isVerified\": false,\n        \"created_at\": \"2024-08-25T06:03:52.258Z\",\n        \"updated_at\": \"2024-08-25T06:08:51.130Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjYzAxM2YyYTAyMGI2MTRjODhmOSIsImVtYWlsIjoiYWRtaW5AYXZhc2hvc3QuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzI0NTY2NjQ5LCJleHAiOjE3MjQ2NTMwNDl9.9Y57iGnJmucYbz7UmPgd62Pjs0xx0tutS0B7zKU4R6E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "admin-only-access",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"66cacd9ea5040a70b8ce5053\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "admin-only-access",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"66cacd9ea5040a70b8ce5053\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-fXNns3yiaS9G4BX/WceW/VgAJAs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 08:59:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": \"User deleted successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjYzAxM2YyYTAyMGI2MTRjODhmOSIsImVtYWlsIjoiYWRtaW5AYXZhc2hvc3QuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzI0NTY2NjQ5LCJleHAiOjE3MjQ2NTMwNDl9.9Y57iGnJmucYbz7UmPgd62Pjs0xx0tutS0B7zKU4R6E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "admin-only-access",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "327"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"147-U0/r4el3YDwMwEySFtPE64kd8YM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 09:02:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": [\n        {\n            \"_id\": \"66cacc013f2a020b614c88f9\",\n            \"name\": \"test\",\n            \"email\": \"admin@avashost.com\",\n            \"password\": \"$2a$10$aM1zAtnA9dQyHiuxBi8lbOIR4Zx0I8v4SSqEQrpRNhLHmRgt2xkAW\",\n            \"role\": \"Admin\",\n            \"isVerified\": false,\n            \"created_at\": \"2024-08-25T06:15:29.621Z\",\n            \"updated_at\": \"2024-08-25T06:15:29.621Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "vaildateToken",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjYzAxM2YyYTAyMGI2MTRjODhmOSIsImVtYWlsIjoiYWRtaW5AYXZhc2hvc3QuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzI0NTkyNDgzLCJleHAiOjE3MjQ2Nzg4ODN9.v11DPOkynLG10q21JgUGv4AxRg3cFjDIPl91RP2DaIs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/vaildateToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"vaildateToken"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This folder include all the routes realted to user. register, login, update, delete and fetch users"
+		},
+		{
+			"name": "auction-microservice",
+			"item": [
+				{
+					"name": "Bid",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjYzAxM2YyYTAyMGI2MTRjODhmOSIsImVtYWlsIjoiYWRtaW5AYXZhc2hvc3QuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzI0NTkyNDgzLCJleHAiOjE3MjQ2Nzg4ODN9.v11DPOkynLG10q21JgUGv4AxRg3cFjDIPl91RP2DaIs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"auctionId\":\"66cb16ef64e6e58ed5981397\", \r\n    \"bidAmount\":8000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/bid",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"bid"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2Y2FjYzAxM2YyYTAyMGI2MTRjODhmOSIsImVtYWlsIjoiYWRtaW5AYXZhc2hvc3QuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzI0NTkyNDgzLCJleHAiOjE3MjQ2Nzg4ODN9.v11DPOkynLG10q21JgUGv4AxRg3cFjDIPl91RP2DaIs",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"auctionId\":\"66cb16ef64e6e58ed5981397\", \r\n    \"bidAmount\":80000\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:4002/api/v2/auction/bid",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "4002",
+											"path": [
+												"api",
+												"v2",
+												"auction",
+												"bid"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "267"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10b-c17ym6vTwVdIHD1UZUsg92ChdaM\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 25 Aug 2024 18:20:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"auctionId\": \"66cb16ef64e6e58ed5981397\",\n        \"userId\": \"66cacc013f2a020b614c88f9\",\n        \"bidAmount\": 80000,\n        \"_id\": \"66cb75d38d8644355a0dea95\",\n        \"created_at\": \"2024-08-25T18:20:03.090Z\",\n        \"updated_at\": \"2024-08-25T18:20:03.090Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "winner",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/winner",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"winner"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "auction-access",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"item\": \"mobil\",\r\n    \"startPrice\": 5000,\r\n    \"startTime\": \"2024-08-25T12:50:00Z\",\r\n    \"endTime\": \"2024-08-26T16:00:00Z\",\r\n    \"status\": \"ongoing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/api/v2/auction/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"v2",
+								"auction",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "response-example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "auction-access",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"item\": \"Laptop\",\r\n    \"startPrice\": 5000,\r\n    \"startTime\": \"2024-08-25T10:00:00Z\",\r\n    \"endTime\": \"2024-08-26T16:00:00Z\",\r\n    \"status\": \"ongoing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "351"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15f-RKtX+0++1FqACJI/QUbLx7zASv0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 10:52:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"item\": \"Laptop\",\n        \"startPrice\": 5000,\n        \"startTime\": \"2024-08-25T10:00:00.000Z\",\n        \"endTime\": \"2024-08-26T16:00:00.000Z\",\n        \"currentHighestBid\": 0,\n        \"status\": \"ongoing\",\n        \"winnerId\": null,\n        \"bids\": [],\n        \"_id\": \"66cb0cd8baf07e6d43762a27\",\n        \"created_at\": \"2024-08-25T10:52:08.507Z\",\n        \"updated_at\": \"2024-08-25T10:52:08.507Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "read all auctions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "auction-access",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4002/api/v2/auction/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"v2",
+								"auction",
+								"read"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "rresponse-read all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "auction-access",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/read",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"read"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "353"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"161-3ppNt6pmE483i/sONqOFtLdvxws\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 10:56:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": [\n        {\n            \"_id\": \"66cb0cd8baf07e6d43762a27\",\n            \"item\": \"Laptop\",\n            \"startPrice\": 5000,\n            \"startTime\": \"2024-08-25T10:00:00.000Z\",\n            \"endTime\": \"2024-08-26T16:00:00.000Z\",\n            \"currentHighestBid\": 0,\n            \"status\": \"ongoing\",\n            \"winnerId\": null,\n            \"bids\": [],\n            \"created_at\": \"2024-08-25T10:52:08.507Z\",\n            \"updated_at\": \"2024-08-25T10:52:08.507Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "readById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "auction-access",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4002/api/v2/auction/read/66cb0cd8baf07e6d43762a27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"v2",
+								"auction",
+								"read",
+								"66cb0cd8baf07e6d43762a27"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "readbyid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "auction-access",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/read/66cb0cd8baf07e6d43762a27",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"read",
+										"66cb0cd8baf07e6d43762a27"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "351"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15f-7KUz57lQy4r8/tgvMs7tFwnIwTc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 11:02:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"_id\": \"66cb0cd8baf07e6d43762a27\",\n        \"item\": \"Laptop\",\n        \"startPrice\": 5000,\n        \"startTime\": \"2024-08-25T10:00:00.000Z\",\n        \"endTime\": \"2024-08-26T16:00:00.000Z\",\n        \"currentHighestBid\": 0,\n        \"status\": \"ongoing\",\n        \"winnerId\": null,\n        \"bids\": [],\n        \"created_at\": \"2024-08-25T10:52:08.507Z\",\n        \"updated_at\": \"2024-08-25T10:52:08.507Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "read auction status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "auction-access",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4002/api/v2/auction/readBy/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"v2",
+								"auction",
+								"readBy",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "read auction status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "auction-access",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/readBy/status",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"readBy",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "238"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ee-BYHEI53Hh/ggNlIeJ2eq8KblSrQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 12:09:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": [\n        {\n            \"_id\": \"66cb0cd8baf07e6d43762a27\",\n            \"item\": \"Laptop\",\n            \"currentHighestBid\": 0,\n            \"status\": \"ongoing\"\n        },\n        {\n            \"_id\": \"66cb16ef64e6e58ed5981397\",\n            \"item\": \"phone\",\n            \"currentHighestBid\": 0,\n            \"status\": \"completed\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "auction-access",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"66cb0f277d4b05c00e1be231\",\r\n    \"item\":\"mobile\",\r\n    \"startPrice\":6000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/api/v2/auction/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"v2",
+								"auction",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update-response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "auction-access",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"66cb0f277d4b05c00e1be231\",\r\n    \"item\":\"mobile\",\r\n    \"startPrice\":6000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "351"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15f-SVJk91CRPdr/B00BvYzplTzNiTI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 11:19:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": {\n        \"_id\": \"66cb0f277d4b05c00e1be231\",\n        \"item\": \"mobile\",\n        \"startPrice\": 6000,\n        \"startTime\": \"2024-08-25T12:50:00.000Z\",\n        \"endTime\": \"2024-08-26T16:00:00.000Z\",\n        \"currentHighestBid\": 0,\n        \"status\": \"ongoing\",\n        \"winnerId\": null,\n        \"bids\": [],\n        \"created_at\": \"2024-08-25T11:01:59.361Z\",\n        \"updated_at\": \"2024-08-25T11:19:05.774Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "auction-access",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"66cb0f277d4b05c00e1be231\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/api/v2/auction/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"v2",
+								"auction",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "response->delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "auction-access",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"66cb0f277d4b05c00e1be231\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4002/api/v2/auction/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4002",
+									"path": [
+										"api",
+										"v2",
+										"auction",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "82"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"52-yLPzrMpGj8b+66AIGgFwo+yFdRw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Aug 2024 11:21:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"OK\",\n    \"status\": true,\n    \"results\": \"Auction deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
