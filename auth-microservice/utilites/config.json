@@ -1,0 +1,4 @@
+{
+  "saltingRounds": 10,
+  "expiresIn": "24h"
+}
