@@ -74,6 +74,7 @@ PORT=4000
 MONGODB_URI=mongodb://localhost:27017/user-microservice
 JWT_SECRET=your_jwt_secret
 ADMIN_API_KEY=your_static_api_secret
+```
 
 For `auction-management-service`:
 ```bash
@@ -81,3 +82,5 @@ PORT=4002
 MONGODB_URI=mongodb://localhost:27017/auction-access
 JWT_SECRET=your_jwt_secret
 ADMIN_API_KEY=your_static_api_secret
+
+```
